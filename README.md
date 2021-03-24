@@ -36,22 +36,19 @@ Firstly, please use pre-trained ResNeSt-200~\cite{zhang2020resnest} to generate 
 
 Semantic Segmentation Outpainting stage:
 
-
-    ```bash
-    python predict_ade20k.py --name=[experiment\'s name] --dataroot=[path_to /ADEChallengeData2016/] --G_checkpoint_name=[name_of_pretrained_model] --use_gpu --batchSize=1 --save_image --ratio=[ratio_of_outpainting_task: 0.5_or_0.25]
-    ```
-It will generate extended semantic segmentation map for next stage in ../results/[experiment\'s name]/. And change line 47 of data/ade20k_dataset.py to "label_files = [\'../results/[experiment\'s name]/train/ADE_val_%08d.png\' % (j+1) for j in range(2000)]".
+    python predict_ade20k.py --name=[experiment name] --dataroot=[path_to /ADEChallengeData2016/] --G_checkpoint_name=[name_of_pretrained_model] --use_gpu --batchSize=1 --save_image --ratio=[ratio_of_outpainting_task: 0.5_or_0.25]
+    
+It will generate extended semantic segmentation map for next stage in ../results/[experiment\'s name]/. And change line 47 of data/ade20k_dataset.py to "label_files = [\'../results/[experiment name]/train/ADE_val_%08d.png\' % (j+1) for j in range(2000)]".
 
 Semantic Image Synthesis stage:
 
-    ```bash
-    python predict_ade20k_segmentation.py --name=[experiment\'s name] --dataroot=[path_to /ADEChallengeData2016/] --G_checkpoint_name=[name_of_pretrained_model] --use_gpu --batchSize=1 --save_image --ratio=[ratio_of_outpainting_task: 0.5_or_0.25]
-    ```
-It will generate extended image guided by semantic segmentation map in \'../results/[experiment\'s name]/train/\'
+    python predict_ade20k_segmentation.py --name=[experiment name] --dataroot=[path_to /ADEChallengeData2016/] --G_checkpoint_name=[name_of_pretrained_model] --use_gpu --batchSize=1 --save_image --ratio=[ratio_of_outpainting_task: 0.5_or_0.25]
+    
+It will generate extended image guided by semantic segmentation map in \'../results/[experiment name]/train/\'
 
 
 
-3. The output images are stored at `../results/[experiment\'s name]/gen_new/` by default.
+3. The output images are stored at `../results/[experiment name]/gen_new/` by default.
 
 
 ## Code Structure
@@ -66,7 +63,6 @@ Semantic Segmentation Outpainting stage.
 
 
 
-```
 
 ## Acknowledgments
 This code borrows heavily from SPADE.
