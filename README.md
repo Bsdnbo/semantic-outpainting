@@ -31,7 +31,7 @@ ADE20K pretrained models:
 
 2. Outpainting using the pretrained model.
 
-Firstly, please use pre-trained ResNeSt-200~\cite{zhang2020resnest} to generate segmentation map of train data and validation data and put them in \'[path_to /ADEChallengeData2016/]/predict_full/\'.
+Firstly, please use pre-trained ResNeSt-200(https://github.com/zhanghang1989/ResNeSt) to generate segmentation map of train data and validation data and put them in \'[path_to /ADEChallengeData2016/]/predict_full/\'.
 
 
 Semantic Segmentation Outpainting stage:
