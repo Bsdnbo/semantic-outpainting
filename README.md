@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ## Generating Images Using Pretrained Model
 
 
-1. Download the tar of the pretrained models from the [Google Drive Folder](https://drive.google.com/file/d/12gvlTbMvUcJewQlSEaZdeb2CdOB-b8kQ/view?usp=sharing), save it in 'checkpoints/'.
+1. Download the checkpoint files of the pretrained models from the [Google Drive Folder](https://drive.google.com/drive/folders/1Q1mx_14Wp3AkTENhM0oS958syNt6nk0u?usp=sharing), save it in 'checkpoints/'.
 
 ADE20K pretrained models:
 
